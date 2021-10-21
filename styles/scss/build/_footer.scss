@@ -1,0 +1,36 @@
+.animesCovers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -11rem;
+    position: relative;
+    z-index: 3;
+    backdrop-filter: blur(1px);
+    padding: 0 0 .5rem 0;
+
+    .animesCovers__img {
+
+        img {
+            height: 14rem;
+            border-radius: .5rem;
+        }
+
+        .animesCovers__title {
+            margin-top: 1rem;
+            color: $color-primary;
+            font: $font-title;
+        }
+
+        .animesCovers__text {
+            margin: .3rem 0 0 0;
+            color: $color-primary--opacity;
+            font: $font-text;
+
+            i {
+                margin:  0 0 0 1rem;
+                color: $color-second;
+                font-size: .7rem;
+            }
+        }
+    }
+}

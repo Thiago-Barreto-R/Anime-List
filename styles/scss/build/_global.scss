@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0094FF;
+    // overflow: hidden;
+}
+
+.ellipse1 {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: -1;
+}
+.ellipse2 {
+    z-index: -1;
+    position: absolute;
+    bottom: -11rem;
+    left: 1rem;
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: $color-second;
+}
+::-webkit-scrollbar {
+    width: 1rem;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: $color-primary;
+}

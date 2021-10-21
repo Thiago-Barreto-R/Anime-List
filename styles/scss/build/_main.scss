@@ -1,0 +1,63 @@
+.contents {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .description {  
+        margin: -7rem 0 0 -7rem;
+
+        .description__title {
+            font: $font-primary;
+            color: $color-primary;
+
+            span {
+                color: $color-second;
+            }
+        }
+
+        .description__text {
+            font: $font-second;
+            color: $color-primary;
+            width: 20rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .description__btn {
+            padding: .5rem 2rem;
+            background-color: $background-primary;
+            border-radius: 1.5rem;
+            color: $color-primary;
+            text-decoration: none;
+            font: $font-second;
+            margin-left: 2rem;
+        }
+
+        .description__title2 {
+            font: $font-primary;
+            color: $color-primary;
+            margin: 4rem 0 0 1.6rem;
+        }
+    }
+
+    .figure {
+        position: relative;
+
+            &::before {
+                content: '';
+                background-color: $background-primary;
+                width: 18rem;
+                position: absolute;
+                height: 18rem;
+                border-radius: 50%;
+                top: 1.6rem;
+                left: 7rem;
+                z-index: 0;
+            }
+        .figure__img {
+            margin-top: 2rem;
+            width: 30rem;
+            position: relative;
+            z-index: 2;
+        }
+    }
+}
