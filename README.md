@@ -9,4 +9,6 @@
 
 
 <h2></h2>
-<img src="">
+<img src="styles/svg/FotoDoSite.svg">
+
+Link da página do site <a href="https://thiago-barreto-r.github.io/Anime-List/">OTAKUDESU</a>
