@@ -35,12 +35,12 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 0.6rem;
+  width: .6rem;
   background: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 0.3rem;
+  border-radius: .3rem;
   background: #fff;
 }
 
@@ -49,43 +49,51 @@ body {
   background-color: #161616;
   border-radius: 2rem 2rem 0 0;
 }
+
 .navigation .navTop {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2.6rem;
 }
+
 .navigation .navTop .navTop__title {
   font: bold 2rem "Roboto", Sans-Serif;
-  padding: 0.5rem 1rem;
+  padding: .5rem 1rem;
   background-color: #303030;
   border-radius: 1.875rem;
   color: #fff;
 }
+
 .navigation .navTop .navTop__title span {
   color: #0094FF;
 }
+
 .navigation .navTop .list {
   display: flex;
   list-style: none;
   align-items: center;
 }
+
 .navigation .navTop .list .list__item .item {
-  padding: 0.6rem 1rem;
+  padding: .6rem 1rem;
   color: #fff;
   text-decoration: none;
   font: 1rem "Roboto", Sans-serif;
-  transition: 0.3s ease-in-out;
+  transition: .3s ease-in-out;
 }
+
 .navigation .navTop .list .list__item .item:hover {
   color: #0094FF;
 }
+
 .navigation .navTop .navTop__search {
-  padding: 0.5rem 1rem;
+  padding: .5rem 1rem;
   outline: 0;
-  border-radius: 0.5rem;
+  border-radius: .5rem;
   border: none;
 }
+
 .navigation .navTop .navTop__search:active {
   color: #0094FF;
   outline: auto;
@@ -96,40 +104,48 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+
 .contents .description {
   margin: -7rem 0 0 -7rem;
 }
+
 .contents .description .description__title {
   font: bold 2rem "Roboto", Sans-Serif;
   color: #fff;
 }
+
 .contents .description .description__title span {
   color: #0094FF;
 }
+
 .contents .description .description__text {
   font: 1rem "Roboto", Sans-serif;
   color: #fff;
   width: 20rem;
   margin-bottom: 1.5rem;
 }
+
 .contents .description .description__btn {
-  padding: 0.8rem 1.5rem;
+  padding: .8rem 1.5rem;
   background-color: #0094FF;
   border-radius: 1.5rem;
   color: #fff;
   text-decoration: none;
   font: 1rem "Roboto", Sans-serif;
 }
+
 .contents .description .description__title2 {
   font: bold 2rem "Roboto", Sans-Serif;
   color: #fff;
   margin: 4rem 0 0 1.6rem;
 }
+
 .contents .figure {
   position: relative;
 }
+
 .contents .figure::before {
-  content: "";
+  content: '';
   background-color: #0094FF;
   width: 18rem;
   position: absolute;
@@ -139,6 +155,7 @@ body {
   left: 7rem;
   z-index: 0;
 }
+
 .contents .figure .figure__img {
   margin-top: 2rem;
   width: 30rem;
@@ -154,26 +171,29 @@ body {
   position: relative;
   z-index: 3;
   backdrop-filter: blur(1px);
-  padding: 0 0 0.5rem 0;
+  padding: 0 0 .5rem 0;
 }
+
 .animesCovers .animesCovers__img img {
   height: 14rem;
-  border-radius: 0.5rem;
+  border-radius: .5rem;
 }
+
 .animesCovers .animesCovers__img .animesCovers__title {
   margin-top: 1rem;
   color: #fff;
   font: bold 0.9rem "Roboto", Sans-serif;
 }
+
 .animesCovers .animesCovers__img .animesCovers__text {
-  margin: 0.3rem 0 0 0;
+  margin: .3rem 0 0 0;
   color: rgba(255, 255, 255, 0.563);
   font: 0.7rem "Roboto", Sans-serif;
 }
+
 .animesCovers .animesCovers__img .animesCovers__text i {
   margin: 0 0 0 1rem;
   color: #0094FF;
-  font-size: 0.7rem;
+  font-size: .7rem;
 }
-
 /*# sourceMappingURL=complet.css.map */
