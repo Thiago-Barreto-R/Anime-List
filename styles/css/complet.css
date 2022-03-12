@@ -1,8 +1,3 @@
-.base {
-  width: 100%;
-  background: #1B1A1A;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -10,24 +5,7 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #0094FF;
-}
-
-.ellipse1 {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  z-index: -1;
-}
-
-.ellipse2 {
-  z-index: -1;
-  position: absolute;
-  bottom: -11rem;
-  left: 1rem;
+  background-color: #1B1A1A;
 }
 
 ::-webkit-scrollbar-track {
@@ -46,17 +24,21 @@ body {
 
 .navigation {
   width: 100%;
+  max-width: 80rem;
   background-color: #161616;
-  border-radius: 2rem 2rem 0 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 .navigation .navTop {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2.6rem;
+  padding: 1rem 2rem;
 }
 .navigation .navTop .navTop__title {
-  font: bold 2rem "Roboto", Sans-Serif;
+  font: bold 1.875rem "Roboto", Sans-Serif;
   padding: 0.5rem 1rem;
   background-color: #303030;
   border-radius: 1.875rem;
@@ -81,7 +63,7 @@ body {
   color: #0094FF;
 }
 .navigation .navTop .navTop__search {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   outline: 0;
   border-radius: 0.5rem;
   border: none;
@@ -90,27 +72,37 @@ body {
   color: #0094FF;
   outline: auto;
 }
+.navigation .navTop .navTop__search::placeholder {
+  color: #0094FF;
+  opacity: 0.6;
+}
+.navigation .navTop span .glass {
+  position: absolute;
+  right: 14.3rem;
+  width: 0.9rem;
+  top: 2.1rem;
+}
 
 .contents {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-.contents .description {
-  margin: -7rem 0 0 -7rem;
+  margin-top: 5rem;
+  max-width: 80rem;
 }
 .contents .description .description__title {
-  font: bold 2rem "Roboto", Sans-Serif;
+  font: bold 1.875rem "Roboto", Sans-Serif;
   color: #fff;
+  margin-left: -5rem;
 }
 .contents .description .description__title span {
   color: #0094FF;
 }
 .contents .description .description__text {
-  font: 1rem "Roboto", Sans-serif;
+  font: bold 1.2rem "Roboto", Sans-serif;
   color: #fff;
   width: 20rem;
-  margin-bottom: 1.5rem;
+  margin: 0 0 2.8rem -5rem;
 }
 .contents .description .description__btn {
   padding: 0.8rem 1.5rem;
@@ -118,12 +110,13 @@ body {
   border-radius: 1.5rem;
   color: #fff;
   text-decoration: none;
+  margin: 0 0 0 -1rem;
   font: 1rem "Roboto", Sans-serif;
 }
 .contents .description .description__title2 {
-  font: bold 2rem "Roboto", Sans-Serif;
+  font: bold 1.875rem "Roboto", Sans-Serif;
   color: #fff;
-  margin: 4rem 0 0 1.6rem;
+  margin: 5.625rem 0 0 -1rem;
 }
 .contents .figure {
   position: relative;
@@ -135,25 +128,30 @@ body {
   position: absolute;
   height: 18rem;
   border-radius: 50%;
-  top: 1.6rem;
-  left: 7rem;
+  left: 15rem;
+  top: 5rem;
   z-index: 0;
 }
 .contents .figure .figure__img {
-  margin-top: 2rem;
+  position: absolute;
+  right: -8rem;
+  top: 6rem;
   width: 30rem;
   position: relative;
   z-index: 2;
 }
 
 .animesCovers {
+  width: 90%;
+  max-width: 80rem;
+  position: absolute;
+  top: 29rem;
+  left: 4rem;
+  z-index: 2;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: -11rem;
-  position: relative;
-  z-index: 3;
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(1.5px);
   padding: 0 0 0.5rem 0;
 }
 .animesCovers .animesCovers__img img {

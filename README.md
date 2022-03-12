@@ -10,10 +10,10 @@
 - CSS
 - SASS / SCSS
 
-**obs: O site ainda não está responsivo**.
+**obs: O site ainda não está responsivo e não tem o Banco de Dados dos animes no site**.
 
 ### imagem final do site
 
-<img src="styles/svg/FotoDoSite.svg">
+<img src="styles/svg/FotoOfc.svg">
 
 Link da página do site <a href="https://thiago-barreto-r.github.io/Anime-List/">OTAKUDESU</a>

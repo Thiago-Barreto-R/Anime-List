@@ -1,14 +1,18 @@
+@use 'variables' as *;
+
 .contents {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 5rem;
+    max-width: 80rem;
 
-    .description {  
-        margin: -7rem 0 0 -7rem;
+    .description {
 
         .description__title {
             font: $font-primary;
             color: $color-primary;
+            margin-left: -5rem;
 
             span {
                 color: $color-second;
@@ -16,10 +20,10 @@
         }
 
         .description__text {
-            font: $font-second;
+            font: bold 1.2rem 'Roboto', Sans-serif;
             color: $color-primary;
             width: 20rem;
-            margin-bottom: 1.5rem;
+            margin: 0 0 2.8rem -5rem;
         }
 
         .description__btn {
@@ -28,13 +32,14 @@
             border-radius: 1.5rem;
             color: $color-primary;
             text-decoration: none;
+            margin: 0 0 0 -1rem;
             font: $font-second;
         }
 
         .description__title2 {
             font: $font-primary;
             color: $color-primary;
-            margin: 4rem 0 0 1.6rem;
+            margin: 5.625rem 0 0 -1rem;
         }
     }
 
@@ -48,12 +53,14 @@
                 position: absolute;
                 height: 18rem;
                 border-radius: 50%;
-                top: 1.6rem;
-                left: 7rem;
+                left: 15rem;
+                top: 5rem;
                 z-index: 0;
             }
         .figure__img {
-            margin-top: 2rem;
+            position: absolute;
+            right: -8rem;
+            top: 6rem;
             width: 30rem;
             position: relative;
             z-index: 2;

@@ -1,13 +1,19 @@
+@use 'variables' as *;
+
 .navigation {
     width: 100%;
+    max-width: 80rem;
     background-color: #161616;
-    border-radius: 2rem 2rem 0 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
     
     .navTop {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem 2.6rem;
+        padding: 1rem 2rem;
 
         .navTop__title {
             font: $font-primary;
@@ -44,7 +50,7 @@
         }
 
         .navTop__search {
-            padding: .5rem 1rem;
+            padding: .5rem 1.5rem;
             outline: 0;
             border-radius: .5rem;
             border: none;
@@ -52,6 +58,18 @@
             &:active {
                 color: $color-second;
                 outline: auto;
+            }
+            &::placeholder {
+                color: $color-second;
+                opacity: .6;
+            }
+        }
+        span {
+            .glass {
+                position: absolute;
+                right: 14.3rem;
+                width: .9rem;
+                top: 2.1rem;
             }
         }
     }

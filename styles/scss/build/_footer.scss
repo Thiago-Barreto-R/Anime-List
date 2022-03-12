@@ -1,11 +1,19 @@
+@use 'variables' as *;
+
 .animesCovers{
+    width: 90%;
+    max-width: 80rem;
+
+    position: absolute;
+    top: 29rem;
+    left:   4rem;
+    z-index: 2;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: -11rem;
-    position: relative;
-    z-index: 3;
-    backdrop-filter: blur(1px);
+
+    backdrop-filter: blur(1.5px);
     padding: 0 0 .5rem 0;
 
     .animesCovers__img {
