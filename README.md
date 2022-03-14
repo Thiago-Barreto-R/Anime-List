@@ -16,4 +16,4 @@
 
 <img src="styles/svg/FotoOfc.svg">
 
-Link da página do site <a href="https://thiago-barreto-r.github.io/Anime-List/">OTAKUDESU</a>
+Link da página do site <a href="https://thiago-barreto-r.github.io/Otakudesu/">OTAKUDESU</a>
