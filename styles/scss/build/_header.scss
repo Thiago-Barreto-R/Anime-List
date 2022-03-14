@@ -2,22 +2,24 @@
 
 .navigation {
     width: 100%;
-    max-width: 80rem;
-    background-color: #161616;
+    max-width: 85rem;
+
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
+
+    background-color: $background-third;
     
     .navTop {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem 2rem;
+        padding: .5rem 1rem;
 
         .navTop__title {
             font: $font-primary;
-            padding: .5rem 1rem;
+            padding: .5rem .8rem;
             background-color: $background-fourth;
             border-radius: 1.875rem;
             color: $color-primary;
@@ -64,12 +66,131 @@
                 opacity: .6;
             }
         }
-        span {
-            .glass {
+        .glass {
+            position: absolute;
+            right: 13.4rem;
+            width: .9rem;
+            top: 1.6rem;
+        }
+
+        .mobile-menu {
+            cursor: pointer;
+            display: none;
+
+            div {
+                background-color: $color-primary;
+                width: 2rem;
+                height: .125rem;
+                margin: .5rem;
+                transition: .3s ease-in-out;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .navigation {
+        
+        .navTop {
+
+            .navTop__title {
+                margin-left: 0rem;
+            }
+
+            .mobile-menu {
+                display: block;
                 position: absolute;
-                right: 14.3rem;
-                width: .9rem;
-                top: 2.1rem;
+                right: 1rem;
+
+                &.show .line1 {
+                    transform: rotate(-45deg) translate(-8px, 8px);
+                }
+                &.show .line2 {
+                    opacity: 0;
+                }
+                &.show .line3 {
+                    transform: rotate(45deg) translate(-5px, -7px);
+                }
+            }
+
+            .list {
+                position: absolute;
+                top: 4.0625rem;
+                right: 0;
+                width: 100%;
+                height: 100vh;
+                flex-direction: column;
+                background-color: $background-third;
+                transform: translateX(100%);
+                transition: transform .6s ease-in-out;
+
+                &.show {
+                    transform: translateX(0);
+                }
+
+                &.show .list__item:nth-child(1){
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+                &.show .list__item:nth-child(2){
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+                &.show .list__item:nth-child(3){
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+                &.show .list__item:nth-child(4){
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+                
+                .list__item {
+
+                    &:nth-child(1) {
+                        margin: 6rem 0 0 0;
+                        transform: translateX(100%);
+                        opacity: 0;
+                        transition: transform 1s ease-in-out,
+                        opacity 1s ease-in-out;
+                    }
+                    &:nth-child(2) {
+                        margin: 5rem 0 0 0;
+                        transform: translateX(300%);
+                        opacity: 0;
+                        transition: transform 1s ease-in-out,
+                        opacity 1s ease-in-out;
+                    }
+                    &:nth-child(3) {
+                        margin: 5rem 0 0 0;
+                        transform: translateX(600%);
+                        opacity: 0;
+                        transition: transform 1s ease-in-out,
+                        opacity 1s ease-in-out;
+                    }
+                    &:nth-child(4) {
+                        margin: 5rem 0 0 0;
+                        transform: translateX(900%);
+                        opacity: 0;
+                        transition: transform 1s ease-in-out,
+                        opacity 1s ease-in-out;
+                    }
+
+                    .item {
+                        font-size: 1.6rem;
+                        
+                    }
+                }
+            }
+            .navTop__search {
+                display: none;
+            }
+            .glass {
+                display: none;
             }
         }
     }

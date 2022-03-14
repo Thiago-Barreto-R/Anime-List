@@ -4,9 +4,9 @@
     width: 90%;
     max-width: 80rem;
 
-    position: absolute;
-    top: 29rem;
-    left:   4rem;
+    position: relative;
+    // top: -5rem;
+    left: 4rem;
     z-index: 2;
 
     display: flex;
@@ -14,13 +14,11 @@
     align-items: center;
 
     backdrop-filter: blur(1.5px);
-    padding: 0 0 .5rem 0;
 
     .animesCovers__img {
 
         img {
-            height: 14rem;
-            border-radius: .5rem;
+            width: 90%;
         }
 
         .animesCovers__title {

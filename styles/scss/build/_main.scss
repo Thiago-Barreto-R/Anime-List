@@ -2,9 +2,9 @@
 
 .contents {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 4.0625rem;
     max-width: 80rem;
 
     .description {
@@ -12,7 +12,7 @@
         .description__title {
             font: $font-primary;
             color: $color-primary;
-            margin-left: -5rem;
+            margin: 0 0 0 2rem;
 
             span {
                 color: $color-second;
@@ -20,26 +20,25 @@
         }
 
         .description__text {
+            width: 18rem;
             font: bold 1.2rem 'Roboto', Sans-serif;
             color: $color-primary;
-            width: 20rem;
-            margin: 0 0 2.8rem -5rem;
+            margin: 0 0 3rem 2rem;
         }
 
         .description__btn {
             padding: .8rem 1.5rem;
-            background-color: $background-primary;
             border-radius: 1.5rem;
+            font: $font-second;
+            background-color: $background-primary;
             color: $color-primary;
             text-decoration: none;
-            margin: 0 0 0 -1rem;
-            font: $font-second;
-        }
+            margin: 0 0 0 7rem;
+            transition: background-color .3s ease-in-out;
 
-        .description__title2 {
-            font: $font-primary;
-            color: $color-primary;
-            margin: 5.625rem 0 0 -1rem;
+            &:hover {
+                background-color: #0d7fd0;
+            }
         }
     }
 
@@ -48,22 +47,29 @@
 
             &::before {
                 content: '';
-                background-color: $background-primary;
                 width: 18rem;
-                position: absolute;
                 height: 18rem;
                 border-radius: 50%;
-                left: 15rem;
-                top: 5rem;
+                background-color: $background-primary;
+                position: absolute;
+                left: 6.5rem;
+                top: 8rem;
                 z-index: 0;
             }
         .figure__img {
             position: absolute;
-            right: -8rem;
-            top: 6rem;
-            width: 30rem;
+            top: 8.5rem;
+            width: 28rem;
             position: relative;
             z-index: 2;
         }
+    }
+}
+
+@media screen and (max-width:1000px) {
+    
+
+    .figure {
+        display: none;
     }
 }
