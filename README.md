@@ -24,7 +24,11 @@ Github Pages > <a href="https://thiago-barreto-r.github.io/Otakudesu/">Otakudesu
 
 ### Autor
 
+<<<<<<< HEAD
 **Nome**: *Thiago B. Rodrigues*
 <br />
 <br />
 **Obs: O projeto ainda não está completo**.
+=======
+Link da página do site <a href="https://thiago-barreto-r.github.io/Otakudesu/">OTAKUDESU</a>
+>>>>>>> 3aebd7744a24f295c9445cd97067099e50cf7891
