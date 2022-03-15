@@ -1,19 +1,30 @@
-<h1 align="center">Clone OTAKUDESU</h1>
+<h1 align="center">OTAKUDESU</h1>
 
 
-<p align="center" class="subTitle">OTAKUDESU</p>
 
-<p>Clone da interface <a href="https://dribbble.com/shots/13921415-ANIME-WEB-STREAM-REDESIGN-OTAKUDESU/attachments/5531194?mode=media">OTAKUDEKU</a> peguei o layout no site dribbble.</p>
+<img src="styles/svg/FotoOfc.svg">
+
+<p>Site de animes para você acompanhar o seu anime atual favorito.
+<br /> Este é o link do site que foi tirada a imagem que eu me baseei para fazer o site <a href="https://dribbble.com/">Dribbble</a>.
+<br />Aqui está o link da imagem que o site foi feito <a href="https://dribbble.com/shots/13921415-ANIME-WEB-STREAM-REDESIGN-OTAKUDESU/attachments/5531194?mode=media">Otakudesu</a>.</p>
 
 ### Tecnologias
 - HTML5
 - CSS
+- JavaScript
 - SASS / SCSS
 
-**obs: O site ainda não está responsivo e não tem o Banco de Dados dos animes no site**.
+### Objetivo do Projeto
 
-### imagem final do site
+<h4>Esse projeto foi criado para consolidar os assuntos que eu já vinha estudando de cursos, ficar mais incentivado e continuar progredindo cada vez mais na área.</h4>
 
-<img src="styles/svg/FotoOfc.svg">
+### Link do site
 
-Link da página do site <a href="https://thiago-barreto-r.github.io/Anime-List/">OTAKUDESU</a>
+Github Pages > <a href="https://thiago-barreto-r.github.io/Otakudesu/">Otakudesu</a>
+
+### Autor
+
+**Nome**: *Thiago B. Rodrigues*
+<br />
+<br />
+**Obs: O projeto ainda não está completo**.
